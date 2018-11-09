@@ -55,7 +55,7 @@ public extension UIScrollView {
             if let aValue = objc_getAssociatedObject(self, &kIQShouldRestoreScrollViewContentOffset) as? Bool {
                 return aValue
             } else {
-                return false
+                return true // azol: change true as default value
             }
         }
         set(newValue) {
